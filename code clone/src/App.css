@@ -29,7 +29,7 @@
   display: flex;
 }
 
-/* Media query for Oppo F11 Pro and similar small devices */
+/* Media query for  small devices */
 @media only screen and (max-width: 480px) {
   .CodeMirror {
     height: 200px !important; /* Adjust height for smaller screens */
