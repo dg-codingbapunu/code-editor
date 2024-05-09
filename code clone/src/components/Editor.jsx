@@ -42,9 +42,9 @@ const Editor = ({ heading, language, value, onChange, icon, color }) => {
   };
 
   return (
-    <Container style={open ? null : { flexGrow: 0 }}>
-      <Header>
-        <Heading>
+    <Container className="cont" style={open ? null : { flexGrow: 0 }}>
+      <Header className="head">
+        <Heading className="heading">
           <Box
             component="span"
             style={{

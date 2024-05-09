@@ -1,3 +1,4 @@
+/* Default styles */
 .CodeMirror {
   height: 340px !important;
   color: white;
@@ -8,59 +9,38 @@
 .CodeMirror-scroll {
   background-color: #1d1e22;
 }
-/* Add this CSS to your existing stylesheet */
+.cont {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px 8px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  background: #060606;
+  color: #aaaebc;
+  font-weight: 700;
+}
+.heading {
+  background: #1d1e22;
+  padding: 9px 12px;
+  display: flex;
+}
 
-/* For small screens (phones, 768px and below) */
-@media only screen and (max-width: 768px) {
-  .controlled-editor {
-    font-size: 14px; /* Adjust font size for better readability on small screens */
+/* Media query for Oppo F11 Pro and similar small devices */
+@media only screen and (max-width: 480px) {
+  .CodeMirror {
+    height: 200px !important; /* Adjust height for smaller screens */
   }
-  .header {
-    flex-direction: column;
+  .cont {
+    padding: 0 4px 4px; /* Adjust padding */
+  }
+  .head {
+    font-size: 14px; /* Adjust font size */
   }
   .heading {
-    padding: 9px 12px;
-  }
-  .close-btn {
-    align-self: flex-end;
-  }
-}
-
-/* For medium screens (tablets, 768px to 1024px) */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .controlled-editor {
-    font-size: 16px; /* Adjust font size for better readability on medium screens */
-  }
-}
-
-/* For large screens (desktops, 1024px and above) */
-@media only screen and (min-width: 1024px) {
-  .controlled-editor {
-    font-size: 18px; /* Adjust font size for better readability on large screens */
-  }
-}
-/* Add this CSS to your existing stylesheet */
-
-/* For small screens (phones, 768px and below) */
-@media only screen and (max-width: 768px) {
-  .CodeMirror {
-    height: 200px !important; /* Adjust height for small screens */
-    font-size: 14px; /* Adjust font size for better readability on small screens */
-  }
-}
-
-/* For medium screens (tablets, 768px to 1024px) */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .CodeMirror {
-    height: 280px !important; /* Adjust height for medium screens */
-    font-size: 16px; /* Adjust font size for better readability on medium screens */
-  }
-}
-
-/* For large screens (desktops, 1024px and above) */
-@media only screen and (min-width: 1024px) {
-  .CodeMirror {
-    height: 340px !important; /* Adjust height for large screens */
-    font-size: 18px; /* Adjust font size for better readability on large screens */
+    padding: 6px 8px; /* Adjust padding */
   }
 }
